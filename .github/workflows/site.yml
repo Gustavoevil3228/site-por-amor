@@ -1,0 +1,55 @@
+# Publica o site no GitHub Pages a cada alteração na branch main.
+# Antes de publicar, monta a página do time a partir das fotos em fotos-time/
+# (nome do arquivo = "Nome - Cargo.jpg"). Se a pasta estiver vazia, usa data/time.json como está.
+name: Publicar site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: Atualizar o time a partir de fotos-time/
+        run: |
+          pip install --quiet pillow pillow-heif
+          python scripts/atualizar_time.py --opcional
+
+      - name: Montar a pasta do site
+        run: |
+          mkdir _site
+          cp *.html _site/
+          cp -r assets data _site/
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

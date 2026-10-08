@@ -1,0 +1,94 @@
+{
+  "resultados": {
+    "aventureiro": {
+      "emoji": "🐕",
+      "titulo": "Cão aventureiro",
+      "texto": "Você tem energia de sobra e adora estar ao ar livre. Um cão de porte médio ou grande, ativo e brincalhão, seria o parceiro perfeito para passeios, trilhas e corridas no parque.",
+      "dica": "Cães ativos precisam de pelo menos dois passeios por dia e espaço para gastar energia.",
+      "botao": "Encontrar meu parceiro",
+      "link": "adote.html#onde-adotar"
+    },
+    "companheiro": {
+      "emoji": "🐶",
+      "titulo": "Cão companheiro",
+      "texto": "Você é caseiro e carinhoso. Um cão de porte pequeno ou um adulto mais calmo vai amar ficar do seu lado no sofá e te seguir pela casa toda.",
+      "dica": "Cães adultos e idosos costumam ser mais tranquilos e são os que mais esperam por um lar.",
+      "botao": "Encontrar meu companheiro",
+      "link": "adote.html#onde-adotar"
+    },
+    "independente": {
+      "emoji": "🐈",
+      "titulo": "Gato independente",
+      "texto": "Sua rotina é corrida, mas você quer companhia em casa. Um gato adulto é carinhoso do jeito dele, se vira bem sozinho durante o dia e se adapta a espaços pequenos.",
+      "dica": "Antes de levar um gato para casa, coloque telas em todas as janelas e varandas.",
+      "botao": "Encontrar meu gato",
+      "link": "adote.html#onde-adotar"
+    },
+    "brincalhao": {
+      "emoji": "🐱",
+      "titulo": "Gato brincalhão",
+      "texto": "Você passa bastante tempo em casa e adora uma bagunça boa. Um gato jovem cheio de energia, ou uma dupla de gatinhos que brincam entre si, vai deixar seus dias muito mais divertidos.",
+      "dica": "Arranhadores e brinquedos ajudam o gato a gastar energia e protegem os seus móveis.",
+      "botao": "Encontrar meu gatinho",
+      "link": "adote.html#onde-adotar"
+    },
+    "ajudante": {
+      "emoji": "🤝",
+      "titulo": "Ajudante dos abrigos",
+      "texto": "Ter um pet é um compromisso da família toda, então o primeiro passo é conversar em casa. Enquanto isso, você já pode fazer muita diferença: seja voluntário, lar temporário ou divulgue os animais das ONGs.",
+      "dica": "Quando todo mundo estiver de acordo, faça o quiz de novo!",
+      "botao": "Ver como ajudar",
+      "link": "adote.html#como-ajudar"
+    }
+  },
+  "perguntas": [
+    {
+      "pergunta": "Como é a sua casa?",
+      "respostas": [
+        { "texto": "Apartamento pequeno", "pontos": { "independente": 2, "brincalhao": 1, "companheiro": 1 } },
+        { "texto": "Apartamento grande ou casa sem quintal", "pontos": { "companheiro": 2, "brincalhao": 1 } },
+        { "texto": "Casa com quintal", "pontos": { "aventureiro": 3, "companheiro": 1 } }
+      ]
+    },
+    {
+      "pergunta": "Quanto tempo você passa em casa?",
+      "respostas": [
+        { "texto": "Pouco: fico fora quase o dia todo", "pontos": { "independente": 3 } },
+        { "texto": "Saio, mas tenho as manhãs ou as noites livres", "pontos": { "companheiro": 1, "aventureiro": 1, "independente": 1 } },
+        { "texto": "Bastante: estudo ou trabalho de casa", "pontos": { "brincalhao": 2, "companheiro": 2 } }
+      ]
+    },
+    {
+      "pergunta": "Seu fim de semana perfeito é…",
+      "respostas": [
+        { "texto": "Parque, trilha ou correr ao ar livre", "pontos": { "aventureiro": 3 } },
+        { "texto": "Sofá, filme e coberta", "pontos": { "companheiro": 2, "independente": 1 } },
+        { "texto": "Jogos e brincadeiras em casa", "pontos": { "brincalhao": 3 } }
+      ]
+    },
+    {
+      "pergunta": "Pelo no sofá e um pouco de bagunça…",
+      "respostas": [
+        { "texto": "Tudo bem, faz parte!", "pontos": { "aventureiro": 1, "brincalhao": 2 } },
+        { "texto": "Dá para lidar, com um pouco de limpeza", "pontos": { "companheiro": 2, "aventureiro": 1 } },
+        { "texto": "Prefiro tudo arrumadinho", "pontos": { "independente": 2 } }
+      ]
+    },
+    {
+      "pergunta": "Que tipo de companhia você quer?",
+      "respostas": [
+        { "texto": "Alguém que me siga pela casa toda", "pontos": { "companheiro": 3 } },
+        { "texto": "Alguém carinhoso, mas que fique na dele", "pontos": { "independente": 3 } },
+        { "texto": "Um parceiro para brincar e gastar energia", "pontos": { "aventureiro": 2, "brincalhao": 2 } }
+      ]
+    },
+    {
+      "pergunta": "Todo mundo em casa topa ter um pet?",
+      "respostas": [
+        { "texto": "Sim, todo mundo quer!", "pontos": {} },
+        { "texto": "Moro sozinho, a decisão é minha", "pontos": {} },
+        { "texto": "Ainda não conversamos sobre isso", "pontos": { "ajudante": 20 } }
+      ]
+    }
+  ]
+}

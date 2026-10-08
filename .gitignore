@@ -1,0 +1,14 @@
+# Imagens originais baixadas do Google Sites (as versões otimizadas estão em assets/img)
+_raw/
+
+# Pasta montada pelo workflow de publicação
+_site/
+
+# Configurações locais do editor/Claude
+.claude/
+
+# Sistema
+Thumbs.db
+.DS_Store
+desktop.ini
+__pycache__/

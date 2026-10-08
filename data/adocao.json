@@ -1,0 +1,57 @@
+[
+  {
+    "nome": "Centro Municipal de Adoção de Cães e Gatos",
+    "tipo": "Prefeitura de São Paulo",
+    "descricao": "Centro da Prefeitura com cerca de 300 cães e gatos de todas as idades e portes. Os animais já saem vacinados, vermifugados, castrados e com microchip.",
+    "endereco": "Rua Santa Eulália, 86 – Santana, São Paulo",
+    "horario": "Seg. a sex. das 9h às 17h; sábados das 9h às 15h",
+    "telefone": "(11) 2974-7892",
+    "whatsapp": "",
+    "instagram": "",
+    "site": "https://prefeitura.sp.gov.br/w/servico/adocao-de-caes-e-gatos"
+  },
+  {
+    "nome": "Adote Petz",
+    "tipo": "Plataforma online",
+    "descricao": "Site com milhares de cães e gatos de ONGs e protetores parceiros. Você escolhe o pet, preenche um formulário e a ONG entra em contato para marcar a visita.",
+    "endereco": "",
+    "horario": "",
+    "telefone": "",
+    "whatsapp": "",
+    "instagram": "",
+    "site": "https://www.adotepetz.com.br/"
+  },
+  {
+    "nome": "Instituto Ampara Animal",
+    "tipo": "ONG",
+    "descricao": "Uma das maiores ONGs de proteção animal do Brasil. Apoia centenas de abrigos e divulga cães e gatos resgatados pelos canais digitais e em eventos de adoção.",
+    "endereco": "",
+    "horario": "",
+    "telefone": "",
+    "whatsapp": "",
+    "instagram": "amparanimal",
+    "site": "https://institutoamparanimal.org.br/caes-e-gatos/"
+  },
+  {
+    "nome": "UIPA – União Internacional Protetora dos Animais",
+    "tipo": "ONG",
+    "descricao": "A ONG de proteção animal mais antiga do país, fundada em 1895, com abrigo e clínica em São Paulo.",
+    "endereco": "Av. Presidente Castello Branco (Marginal Tietê), 3200 – Canindé, São Paulo",
+    "horario": "",
+    "telefone": "(11) 3228-1462",
+    "whatsapp": "",
+    "instagram": "uipasp",
+    "site": "https://www.uipa.org.br/adocao/"
+  },
+  {
+    "nome": "Adote um Gatinho",
+    "tipo": "ONG · só gatos",
+    "descricao": "Resgata, trata, castra e doa gatinhos para lares seguros. Adoções somente para São Paulo e ABC (Santo André, São Bernardo e São Caetano).",
+    "endereco": "",
+    "horario": "",
+    "telefone": "",
+    "whatsapp": "",
+    "instagram": "adoteumgatinho",
+    "site": "https://adoteumgatinho.org.br/gatinhos-para-adocao"
+  }
+]

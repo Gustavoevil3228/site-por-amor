@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Time do Por Amor | Por Amor Pet Shop</title>
+  <meta name="description" content="Conheça o time do Por Amor Pet Shop e as funções de cada integrante.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Por Amor Pet Shop, página inicial">
+        <img src="assets/img/logo.png" alt="Por Amor Pet Shop" width="64" height="36">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="missao-visao-valores.html">Missão, Visão e Valores</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="time.html" aria-current="page">Time</a></li>
+          <li><a href="adote.html">Adote</a></li>
+          <li><a href="diversao.html">Diversão</a></li>
+          <li><a href="redes-sociais.html">Redes Sociais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Equipe do Por Amor</h1>
+        <p>Conheça o time do Por Amor e suas funções:</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <!-- Os cards são gerados por assets/js/main.js a partir de data/time.json -->
+        <div class="filter-bar" id="team-filters" aria-label="Filtrar por área"></div>
+        <p class="team-status" id="team-status">Carregando o time…</p>
+        <div class="team-grid" id="team-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Entre em contato pelo e-mail <a href="mailto:poramorempresarial@gmail.com">poramorempresarial@gmail.com</a></p>
+      <p>Siga no <a href="https://www.instagram.com/por.amor_petshop" target="_blank" rel="noopener">Instagram (@por.amor_petshop)</a> e no <a href="https://www.linkedin.com/company/por-amor-pet-shop/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="footer-small">© <span data-year>2026</span> Por Amor Pet Shop</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

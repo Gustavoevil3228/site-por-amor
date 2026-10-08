@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos | Por Amor Pet Shop</title>
+  <meta name="description" content="Projetos desenvolvidos pelo time do Por Amor: Janeiro Branco, Espro que eu vejo e mais.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Por Amor Pet Shop, página inicial">
+        <img src="assets/img/logo.png" alt="Por Amor Pet Shop" width="64" height="36">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="quem-somos.html">Quem Somos</a></li>
+          <li><a href="missao-visao-valores.html">Missão, Visão e Valores</a></li>
+          <li><a href="projetos.html" aria-current="page">Projetos</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li><a href="adote.html">Adote</a></li>
+          <li><a href="diversao.html">Diversão</a></li>
+          <li><a href="redes-sociais.html">Redes Sociais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Projetos</h1>
+        <p>Tudo o que o time do Por Amor já desenvolveu, do mais recente ao mais antigo. Clique em um projeto para ver os detalhes.</p>
+      </div>
+    </section>
+
+    <!-- Os projetos são gerados por assets/js/main.js a partir de data/projetos.json -->
+    <section class="section">
+      <div class="container">
+        <div class="filter-bar" id="project-filters" aria-label="Filtrar projetos por tipo"></div>
+        <div class="project-grid" id="project-grid">
+          <p class="team-status">Carregando projetos…</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Janela com o projeto completo (abre ao clicar num card ou pelo link projetos.html#id) -->
+    <dialog class="project-dialog" id="project-dialog" aria-labelledby="project-dialog-title"></dialog>
+
+    <!-- A agenda é gerada por assets/js/main.js a partir de data/eventos.json -->
+    <section class="section section-agenda" id="calendario">
+      <div class="container">
+        <div class="section-title">
+          <h2>Calendário</h2>
+          <p>Nossas atividades acontecem às segundas-feiras, dia do curso. Clique em um dia marcado para ver o que aconteceu ou o que vem por aí.</p>
+        </div>
+        <div class="agenda">
+          <div class="calendar" id="calendar">
+            <div class="cal-header">
+              <button type="button" class="cal-nav" data-prev aria-label="Mês anterior">‹</button>
+              <h3 data-month-label aria-live="polite"></h3>
+              <button type="button" class="cal-nav" data-next aria-label="Próximo mês">›</button>
+            </div>
+            <div class="cal-weekdays" aria-hidden="true">
+              <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sáb</span>
+            </div>
+            <div class="cal-grid" data-grid></div>
+            <div class="cal-legend" aria-hidden="true">
+              <span><i class="dot-event"></i>Atividade ou evento</span>
+              <span><i class="dot-holiday"></i>Feriado</span>
+              <span><i class="dot-today"></i>Hoje</span>
+            </div>
+          </div>
+          <div class="event-panel">
+            <h3 id="event-list-title">Eventos</h3>
+            <div id="event-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Entre em contato pelo e-mail <a href="mailto:poramorempresarial@gmail.com">poramorempresarial@gmail.com</a></p>
+      <p>Siga no <a href="https://www.instagram.com/por.amor_petshop" target="_blank" rel="noopener">Instagram (@por.amor_petshop)</a> e no <a href="https://www.linkedin.com/company/por-amor-pet-shop/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="footer-small">© <span data-year>2026</span> Por Amor Pet Shop</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

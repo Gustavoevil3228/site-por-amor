@@ -1,0 +1,224 @@
+[
+  {
+    "id": "janeiro-branco",
+    "titulo": "Janeiro Branco",
+    "data": "2026-01",
+    "emoji": "🤍",
+    "tipo": "Conscientização",
+    "resumo": "Um mês sobre saúde mental, com uma roda de arte em que cada um pintou como se enxerga.",
+    "paragrafos": [
+      "O projeto Janeiro Branco aborda a importância da saúde mental, promovendo reflexões sobre a forma como nos tratamos e compreendemos nossos próprios sentimentos. A iniciativa incentiva os participantes a compartilharem suas percepções e experiências, contribuindo para um ambiente de diálogo, empatia e conscientização entre os colegas.",
+      "Nosso grupo desenvolveu um projeto baseado em uma dinâmica de roda de arte, na qual cada participante produziu uma pintura que representasse sua percepção sobre o momento atual e a forma como se enxerga nesse contexto. Durante a atividade, cada integrante apresentou e explicou sua obra, compartilhando seus significados e reflexões.",
+      "Ao final, as pinturas foram trocadas entre os participantes da roda como forma de reconhecimento e conexão, até que o ciclo fosse concluído. A dinâmica contou também com a participação de instrutores e representantes da Espro, enriquecendo ainda mais a experiência coletiva."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/janeiro-branco.jpg",
+        "alt": "Participantes sentados em roda no chão em volta de um tecido com pinturas"
+      }
+    ]
+  },
+  {
+    "id": "espro-que-eu-vejo",
+    "titulo": "Espro que eu vejo",
+    "data": "2026-03-23",
+    "emoji": "📖",
+    "tipo": "Apresentação",
+    "resumo": "Um livro interativo com o que pensamos e sentimos sobre a Espro, avaliado com nota 4,7 de 5.",
+    "paragrafos": [
+      "O projeto “Espro que eu vejo” consiste em um evento promovido pela Espro, que tem como objetivo proporcionar aos jovens a oportunidade de desenvolverem projetos que expressem suas percepções sobre a instituição.",
+      "Nosso grupo desenvolveu um projeto baseado na criação de um livro interativo, que, ao ser aberto, apresentava diferentes aspectos discutidos e construídos coletivamente. O material reunia nossas opiniões, reflexões e ideias, evidenciando a forma como compreendemos e representamos a Espro.",
+      "Depois da apresentação, aplicamos um formulário de avaliação para coletar o feedback dos participantes, entender o nível de compreensão do conteúdo e identificar pontos de melhoria para as próximas apresentações."
+    ],
+    "destaques": [
+      {
+        "valor": "4,7",
+        "sufixo": "/5",
+        "rotulo": "média de satisfação na avaliação da apresentação"
+      }
+    ],
+    "midia": [
+      {
+        "tipo": "video",
+        "src": "assets/video/espro-que-eu-vejo.mp4",
+        "poster": "assets/img/espro-que-eu-vejo.jpg",
+        "alt": "Vídeo da apresentação do livro interativo Espro que eu vejo"
+      },
+      {
+        "tipo": "imagem",
+        "src": "assets/img/satisfacao.png",
+        "alt": "Gráfico de rosca com a média de satisfação 4,7 de 5",
+        "inteira": true
+      }
+    ]
+  },
+  {
+    "id": "amigo-chocolate",
+    "titulo": "Amigo Chocolate",
+    "data": "2026-04-27",
+    "emoji": "🍫",
+    "tipo": "Integração",
+    "resumo": "Uma dinâmica de integração no estilo amigo oculto, trocando chocolates.",
+    "paragrafos": [
+      "Foi realizada uma dinâmica de integração em que cada participante sorteou um colega para presentear com um chocolate, semelhante ao tradicional amigo oculto. A atividade teve como objetivo fortalecer os laços entre os integrantes, incentivar a interação e proporcionar um momento de descontração e convivência."
+    ]
+  },
+  {
+    "id": "maio-laranja",
+    "titulo": "Maio Laranja",
+    "data": "2026-05",
+    "emoji": "🧡",
+    "tipo": "Conscientização",
+    "setor": "Todos os setores",
+    "resumo": "Dinâmicas de conscientização em todos os setores e uma publicação especial no Instagram.",
+    "paragrafos": [
+      "Durante a campanha Maio Laranja, os diferentes setores promoveram dinâmicas de conscientização. Além disso, o setor de Marketing realizou uma publicação no Instagram para ampliar o alcance da campanha e conscientizar um público maior sobre a importância do tema."
+    ],
+    "link": {
+      "texto": "Ver no Instagram",
+      "url": "https://www.instagram.com/por.amor_petshop"
+    }
+  },
+  {
+    "id": "de-olho-no-futuro",
+    "titulo": "De Olho no Futuro",
+    "data": "2026-06-08",
+    "emoji": "🎓",
+    "tipo": "Palestra",
+    "resumo": "Uma professora convidada contou sua trajetória e deu dicas sobre carreira, estudos e futuro.",
+    "paragrafos": [
+      "No mês de junho, recebemos uma professora convidada para compartilhar sua trajetória acadêmica e profissional. Durante a palestra, ela contou sobre sua experiência e ofereceu dicas e orientações sobre carreira, estudos e desenvolvimento profissional, incentivando os integrantes a refletirem sobre seus objetivos e o planejamento do futuro."
+    ]
+  },
+  {
+    "id": "saida-tecnica",
+    "titulo": "Saída Técnica",
+    "data": "2026-07-13",
+    "emoji": "🐕",
+    "tipo": "Na prática",
+    "setor": "Desenvolvimento Social",
+    "resumo": "Experiência prática: a gravação de um conteúdo com um cachorro para as redes sociais do Por Amor.",
+    "paragrafos": [
+      "Em julho, o setor de Desenvolvimento Social realizou uma saída técnica que proporcionou uma experiência prática aos integrantes. Durante a atividade, uma das integrantes do curso levou um cachorro para participar de uma gravação destinada às redes sociais do Por Amor Pet Shop.",
+      "A experiência permitiu conhecer melhor o funcionamento de uma atividade profissional na prática, além de mostrar como diferentes setores podem colaborar na produção de conteúdos para divulgação e comunicação da empresa."
+    ],
+    "link": {
+      "texto": "Ver no Instagram",
+      "url": "https://www.instagram.com/por.amor_petshop"
+    }
+  },
+  {
+    "id": "projeto-linkedin",
+    "titulo": "Projeto LinkedIn",
+    "data": "2026-08",
+    "emoji": "💼",
+    "tipo": "Carreira",
+    "resumo": "Como montar um bom perfil no LinkedIn, com atividade prática e 5 ferramentas de IA.",
+    "paragrafos": [
+      "Durante todo o mês de agosto, tivemos apresentações de slides e atividades práticas do projeto LinkedIn, com o objetivo de orientar os integrantes sobre como melhorar a apresentação e o layout de seus perfis na plataforma. Cada setor teve o seu dia de atividade.",
+      "Também foram compartilhados cinco links de ferramentas de Inteligência Artificial (IA) que podem ajudar na organização, personalização e melhoria visual do perfil, trazendo novas possibilidades para aprimorar a apresentação profissional dos participantes."
+    ],
+    "link": {
+      "texto": "Conheça o time",
+      "url": "time.html"
+    },
+    "atividades": [
+      {
+        "data": "2026-08-03",
+        "titulo": "Projeto LinkedIn",
+        "texto": "Atividade prática do projeto LinkedIn."
+      },
+      {
+        "data": "2026-08-10",
+        "titulo": "Projeto LinkedIn: Marketing",
+        "texto": "Atividade prática do projeto LinkedIn com o setor de Marketing."
+      },
+      {
+        "data": "2026-08-17",
+        "titulo": "Projeto LinkedIn: RH",
+        "texto": "Atividade prática do projeto LinkedIn com o setor de RH."
+      },
+      {
+        "data": "2026-08-24",
+        "titulo": "Projeto LinkedIn",
+        "texto": "Atividade prática do projeto LinkedIn."
+      },
+      {
+        "data": "2026-08-31",
+        "titulo": "Projeto LinkedIn: T.I",
+        "texto": "Atividade prática do projeto LinkedIn com o setor de T.I."
+      }
+    ]
+  },
+  {
+    "id": "folclore-e-lendas-urbanas",
+    "titulo": "Folclore e lendas urbanas",
+    "data": "2026-08-03",
+    "emoji": "🎭",
+    "tipo": "Apresentação",
+    "resumo": "Apresentação sobre folclore e lendas urbanas para a turma 17299.",
+    "paragrafos": [
+      "Foi realizada uma apresentação sobre folclore e lendas urbanas para a turma 17299. A atividade possibilitou compartilhar conhecimentos, desenvolver a comunicação e promover a interação entre diferentes turmas."
+    ]
+  },
+  {
+    "id": "dia-internacional-dos-gatos",
+    "titulo": "Dia Internacional dos Gatos",
+    "data": "2026-08-08",
+    "emoji": "🐱",
+    "tipo": "Redes sociais",
+    "resumo": "Uma postagem especial em homenagem aos gatos.",
+    "paragrafos": [
+      "No dia 8 de agosto, foi realizada uma postagem especial em homenagem ao Dia Internacional dos Gatos, contribuindo para a produção de conteúdos diversificados e para o fortalecimento da presença nas redes sociais."
+    ],
+    "link": {
+      "texto": "Ver no Instagram",
+      "url": "https://www.instagram.com/por.amor_petshop"
+    }
+  },
+  {
+    "id": "gestao-da-qualidade",
+    "titulo": "Gestão da Qualidade",
+    "data": "2026-08-17",
+    "emoji": "✅",
+    "tipo": "Redes sociais",
+    "setor": "Marketing",
+    "resumo": "Posts sobre a dinâmica de Gestão da Qualidade: organização, qualidade e funcionalidade.",
+    "paragrafos": [
+      "Em agosto, o setor de Marketing realizou postagens nas redes sociais relacionadas à dinâmica de Gestão da Qualidade, proporcionando um aprendizado sobre a importância da qualidade, da organização e da funcionalidade nas atividades realizadas."
+    ],
+    "link": {
+      "texto": "Ver no Instagram",
+      "url": "https://www.instagram.com/por.amor_petshop"
+    }
+  },
+  {
+    "id": "setembro-amarelo",
+    "titulo": "Setembro Amarelo",
+    "data": "2026-09",
+    "emoji": "💛",
+    "tipo": "Conscientização",
+    "resumo": "Um mês de atividades sobre valorização da vida, autoestima e cuidado com os sentimentos.",
+    "paragrafos": [
+      "Durante o mês de setembro, foram realizadas diferentes atividades relacionadas ao Projeto Setembro Amarelo, com o objetivo de promover momentos de reflexão, interação, autoestima e valorização da vida entre os integrantes."
+    ],
+    "atividades": [
+      {
+        "data": "2026-09-14",
+        "titulo": "Confraternização e dinâmica de autoestima",
+        "texto": "Todos os integrantes da turma contribuíram trazendo um alimento ou uma bebida. Também foi realizada uma dinâmica de autoestima, na qual compartilhamos uma folha com diversos sentimentos e conversamos sobre a importância da valorização da vida, do cuidado consigo mesmo e da atenção aos sentimentos."
+      },
+      {
+        "data": "2026-09-21",
+        "titulo": "Arteterapia",
+        "texto": "Cada integrante produziu um desenho ou pintura para representar seus sentimentos. Depois, cada pessoa escolheu o desenho de outra e explicou qual sentimento percebeu naquela representação. Um momento de criatividade, reflexão e expressão dos sentimentos por meio da arte."
+      },
+      {
+        "data": "2026-09-28",
+        "titulo": "Alimentação saudável e os riscos das bets",
+        "texto": "O grupo de Nutrição apresentou a importância de manter uma alimentação saudável e praticar exercícios físicos. Também tivemos uma palestra com o professor Diego, do FMT, sobre as bets e os riscos das apostas, que podem levar a perdas financeiras."
+      }
+    ]
+  }
+]

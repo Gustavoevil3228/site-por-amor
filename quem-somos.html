@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quem Somos | Por Amor Pet Shop</title>
+  <meta name="description" content="Conheça a história do Por Amor Pet Shop: como começamos e por que criamos a empresa.">
+  <link rel="icon" href="assets/img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&family=Roboto+Serif:opsz,wght@8..144,400;8..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Por Amor Pet Shop, página inicial">
+        <img src="assets/img/logo.png" alt="Por Amor Pet Shop" width="64" height="36">
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="quem-somos.html" aria-current="page">Quem Somos</a></li>
+          <li><a href="missao-visao-valores.html">Missão, Visão e Valores</a></li>
+          <li><a href="projetos.html">Projetos</a></li>
+          <li><a href="time.html">Time</a></li>
+          <li><a href="adote.html">Adote</a></li>
+          <li><a href="diversao.html">Diversão</a></li>
+          <li><a href="redes-sociais.html">Redes Sociais</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-banner">
+      <div class="container">
+        <h1>Quem somos</h1>
+        <p>Tudo tem um começo, e explicaremos um pouco de como tudo começou:</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="split-media">
+          <img src="assets/img/como-comecamos.jpg" alt="Sala de aula vazia com fileiras de carteiras" loading="lazy">
+        </div>
+        <div class="split-text">
+          <h2>Como começamos?</h2>
+          <p>Começamos o projeto em uma sala, orientados pela instrutora Bárbara a criar uma empresa para gerirmos, com a missão de evoluirmos até o fim do contrato. Então nos organizamos e criamos o Por Amor, cujo objetivo é democratizar o cuidado aos animais, incentivar doações e apoiar a comunidade local, com a finalidade de um maior conhecimento popular sobre os nossos pets.</p>
+          <a class="btn" href="missao-visao-valores.html">Conheça nossos princípios</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container split reverse">
+        <div class="split-media">
+          <div class="logo-card">
+            <img src="assets/img/logo.png" alt="Logo do Por Amor Pet Shop" width="517" height="292" loading="lazy">
+          </div>
+        </div>
+        <div class="split-text">
+          <h2>Quando criamos essa empresa</h2>
+          <p>No início deste projeto, cogitamos criar uma ONG para ajudar pessoas em situação de vulnerabilidade a reformar suas casas. Porém, após analisarmos a questão financeira e de princípios, decidimos não seguir com essa ideia. Depois disso, surgiu a proposta que permanece até hoje: o Pet Shop Por Amor.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- A linha do tempo é montada por assets/js/main.js a partir de data/historia.json
+         (e os próximos eventos de data/eventos.json aparecem no fim como "Em breve") -->
+    <section class="section" id="trajetoria">
+      <div class="container">
+        <div class="section-title">
+          <h2>Nossa trajetória</h2>
+          <p id="timeline-summary">Tudo o que já fizemos juntos, mês a mês.</p>
+        </div>
+        <div class="filter-bar" id="timeline-filters" aria-label="Filtrar por tipo de atividade"></div>
+        <nav class="timeline-months" id="timeline-months" aria-label="Ir para o mês"></nav>
+        <div class="timeline" id="timeline">
+          <div class="timeline-line" aria-hidden="true"><div class="timeline-progress"></div></div>
+          <p class="team-status">Carregando…</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Entre em contato pelo e-mail <a href="mailto:poramorempresarial@gmail.com">poramorempresarial@gmail.com</a></p>
+      <p>Siga no <a href="https://www.instagram.com/por.amor_petshop" target="_blank" rel="noopener">Instagram (@por.amor_petshop)</a> e no <a href="https://www.linkedin.com/company/por-amor-pet-shop/" target="_blank" rel="noopener">LinkedIn</a></p>
+      <p class="footer-small">© <span data-year>2026</span> Por Amor Pet Shop</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

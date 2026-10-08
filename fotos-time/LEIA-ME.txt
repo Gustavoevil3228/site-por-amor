@@ -1,0 +1,36 @@
+Coloque aqui as fotos do time, com o nome do arquivo no formato:
+
+    Nome - Cargo.jpg
+
+Exemplos:
+    Gustavo - Gestor Geral.jpg
+    Fernanda - Gestora do RH.jpg
+    Nicoly - T.I.jpg
+    Isabelle - Suplente e Marketing.jpg   (o Windows não aceita "/" no nome)
+
+Quem tem "Gestor" ou "Gestora" no cargo aparece no filtro Gestão e também no time
+da área (ex.: "Gestora de Recursos Humanos" aparece em Gestão e em RH).
+
+Quem AUXILIA outro time, sem mudar o cargo, leva o time entre colchetes no fim.
+O que está entre colchetes não aparece no site, só coloca a pessoa naquele filtro:
+    Vitor - Gestor Geral [T.I].jpg
+    Luiza - Gestora Geral [Planejamento].jpg
+    Fulano - Marketing [RH, Planejamento].jpg   (mais de um time: separe por vírgula)
+
+Para escolher a ordem em que aparecem no site, coloque um número na frente:
+    01 - Gustavo - Gestor Geral.jpg
+
+PELO GITHUB (sem instalar nada):
+    Abra esta pasta no site do GitHub > Add file > Upload files > arraste as fotos
+    > Commit changes. Em 1 ou 2 minutos o site é atualizado sozinho.
+    Para trocar nome/cargo, renomeie a foto: na página do repositório aperte a
+    tecla . (ponto) para abrir o editor web (github.dev), clique com o botão
+    direito na foto > Rename, e depois envie pelo ícone de Source Control > Commit & Push.
+    Para tirar alguém do time, apague a foto da pessoa (abra a foto > ... > Delete file).
+
+NO COMPUTADOR (para ver antes de publicar):
+    python scripts/atualizar_time.py
+
+Fotos quadradas ficam melhores. Se não forem, o corte é feito no centro
+(um pouco puxado para cima, onde normalmente fica o rosto).
+Enquanto esta pasta estiver vazia, o site usa a lista que está em data/time.json.
