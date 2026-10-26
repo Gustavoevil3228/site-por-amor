@@ -334,6 +334,17 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow);
   background: #000;
 }
+/* Vídeo da seção "Uma homenagem" (página inicial) */
+.tribute-video {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: #000;
+}
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
