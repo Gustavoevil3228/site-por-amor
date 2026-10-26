@@ -135,6 +135,12 @@ p { margin: 0 0 1em; }
 .site-nav a:hover { background: rgba(255, 255, 255, 0.1); color: #fff; }
 .site-nav a[aria-current="page"] { background: var(--brand); color: var(--brand-deep); }
 
+/* Telas médias: menu mais compacto para caber em uma linha */
+@media (max-width: 1140px) {
+  .site-nav ul { gap: 2px; }
+  .site-nav a { padding: 8px 8px; font-size: 0.9rem; }
+}
+
 @media (max-width: 980px) {
   .nav-toggle { display: block; }
   .site-nav {
@@ -334,7 +340,14 @@ p { margin: 0 0 1em; }
   box-shadow: var(--shadow);
   background: #000;
 }
-/* Vídeo da seção "Uma homenagem" (página inicial) */
+/* Página "Uma homenagem" (homenagem.html) */
+.tribute-text {
+  max-width: 720px;
+  margin: 28px auto 0;
+  text-align: center;
+  font-size: 1.15rem;
+  color: var(--ink-soft);
+}
 .tribute-video {
   display: block;
   width: 100%;

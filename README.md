@@ -10,6 +10,7 @@ quem-somos.html             Quem Somos + linha do tempo (marcos + todos os proje
 missao-visao-valores.html   Missão, Visão e Valores (+ mapa)
 projetos.html               Projetos em cards (clique abre o projeto completo) + Calendário
 time.html                   Time do Por Amor (gerado a partir de data/time.json)
+homenagem.html              Uma homenagem: vídeo da turma para a instrutora Bárbara
 adote.html                  Onde adotar, antes de adotar e como ajudar (gerado a partir de data/adocao.json)
 diversao.html               Quiz "Qual pet combina com você?" + calculadora de idade do pet
 redes-sociais.html          Instagram, LinkedIn e e-mail
