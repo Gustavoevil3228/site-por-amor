@@ -62,6 +62,13 @@
     "resumo": "Uma dinâmica de integração no estilo amigo oculto, trocando chocolates.",
     "paragrafos": [
       "Foi realizada uma dinâmica de integração em que cada participante sorteou um colega para presentear com um chocolate, semelhante ao tradicional amigo oculto. A atividade teve como objetivo fortalecer os laços entre os integrantes, incentivar a interação e proporcionar um momento de descontração e convivência."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/amigo-chocolate.jpg",
+        "alt": "Selfie da turma reunida na sala, com um integrante segurando um chocolate"
+      }
     ]
   },
   {
@@ -74,6 +81,13 @@
     "resumo": "Dinâmicas de conscientização em todos os setores e uma publicação especial no Instagram.",
     "paragrafos": [
       "Durante a campanha Maio Laranja, os diferentes setores promoveram dinâmicas de conscientização. Além disso, o setor de Marketing realizou uma publicação no Instagram para ampliar o alcance da campanha e conscientizar um público maior sobre a importância do tema."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/maio-laranja.jpg",
+        "alt": "Integrantes em fila na sala durante uma dinâmica do Maio Laranja"
+      }
     ],
     "link": {
       "texto": "Ver no Instagram",
@@ -89,6 +103,13 @@
     "resumo": "Uma professora convidada contou sua trajetória e deu dicas sobre carreira, estudos e futuro.",
     "paragrafos": [
       "No mês de junho, recebemos uma professora convidada para compartilhar sua trajetória acadêmica e profissional. Durante a palestra, ela contou sobre sua experiência e ofereceu dicas e orientações sobre carreira, estudos e desenvolvimento profissional, incentivando os integrantes a refletirem sobre seus objetivos e o planejamento do futuro."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/de-olho-no-futuro.jpg",
+        "alt": "Foto da turma com a professora convidada depois da palestra"
+      }
     ]
   },
   {
@@ -102,6 +123,13 @@
     "paragrafos": [
       "Em julho, o setor de Desenvolvimento Social realizou uma saída técnica que proporcionou uma experiência prática aos integrantes. Durante a atividade, uma das integrantes do curso levou um cachorro para participar de uma gravação destinada às redes sociais do Por Amor Pet Shop.",
       "A experiência permitiu conhecer melhor o funcionamento de uma atividade profissional na prática, além de mostrar como diferentes setores podem colaborar na produção de conteúdos para divulgação e comunicação da empresa."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/saida-tecnica.jpg",
+        "alt": "Cachorro de coleira que participou da gravação para as redes sociais"
+      }
     ],
     "link": {
       "texto": "Ver no Instagram",
@@ -188,6 +216,13 @@
     "paragrafos": [
       "Em agosto, o setor de Marketing realizou postagens nas redes sociais relacionadas à dinâmica de Gestão da Qualidade, proporcionando um aprendizado sobre a importância da qualidade, da organização e da funcionalidade nas atividades realizadas."
     ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/gestao-da-qualidade.jpg",
+        "alt": "Capa do post Gestão de Qualidade, turma 17112"
+      }
+    ],
     "link": {
       "texto": "Ver no Instagram",
       "url": "https://www.instagram.com/por.amor_petshop"
@@ -202,6 +237,13 @@
     "resumo": "Um mês de atividades sobre valorização da vida, autoestima e cuidado com os sentimentos.",
     "paragrafos": [
       "Durante o mês de setembro, foram realizadas diferentes atividades relacionadas ao Projeto Setembro Amarelo, com o objetivo de promover momentos de reflexão, interação, autoestima e valorização da vida entre os integrantes."
+    ],
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/setembro-amarelo.jpg",
+        "alt": "Pintura feita na arteterapia, com um oceano escrito oceano de sentimentos"
+      }
     ],
     "atividades": [
       {
@@ -218,6 +260,93 @@
         "data": "2026-09-28",
         "titulo": "Alimentação saudável e os riscos das bets",
         "texto": "O grupo de Nutrição apresentou a importância de manter uma alimentação saudável e praticar exercícios físicos. Também tivemos uma palestra com o professor Diego, do FMT, sobre as bets e os riscos das apostas, que podem levar a perdas financeiras."
+      }
+    ]
+  },
+  {
+    "id": "saida-tecnica-parque-do-carmo",
+    "titulo": "Saída Técnica: Parque do Carmo",
+    "data": "2026-10-19",
+    "emoji": "🌳",
+    "tipo": "Na prática",
+    "resumo": "Entrevistamos tutores no Parque do Carmo: 4 em cada 6 querem uma área só para os pets.",
+    "paragrafos": [
+      "Realizamos uma visita ao Parque do Carmo com o objetivo de entrevistar tutores de animais, conhecer suas experiências e compreender melhor suas opiniões e necessidades em relação aos cuidados com os pets. Além da coleta de informações, o encontro proporcionou um momento de confraternização entre os integrantes da equipe."
+    ],
+    "destaques": [
+      { "valor": "6", "rotulo": "tutores entrevistados no parque" },
+      { "valor": "5", "sufixo": "/6", "rotulo": "acham o Parque do Carmo um bom espaço para os pets" },
+      { "valor": "4", "sufixo": "/6", "rotulo": "pediram uma área exclusiva para os pets" }
+    ],
+    "pesquisa": {
+      "titulo": "O que os tutores responderam",
+      "total": 6,
+      "nota": "Respostas parecidas foram agrupadas. Em \"Produtos mais comprados\", cada pessoa podia citar mais de um.",
+      "perguntas": [
+        {
+          "pergunta": "O parque é um bom espaço para os pets?",
+          "respostas": [
+            { "texto": "Sim", "n": 5 },
+            { "texto": "Não, falta água para os pets", "n": 1 }
+          ]
+        },
+        {
+          "pergunta": "O que poderia melhorar no parque?",
+          "respostas": [
+            { "texto": "Uma área só para os pets", "n": 4 },
+            { "texto": "Mais segurança", "n": 1 },
+            { "texto": "Sem sugestão", "n": 1 }
+          ]
+        },
+        {
+          "pergunta": "Já teve dificuldade ao passear com o pet?",
+          "respostas": [
+            { "texto": "Não", "n": 4 },
+            { "texto": "Sim", "n": 2 }
+          ]
+        },
+        {
+          "pergunta": "Com que frequência passeia com o pet?",
+          "respostas": [
+            { "texto": "Uma vez por semana", "n": 2 },
+            { "texto": "Duas ou mais vezes por semana", "n": 2 },
+            { "texto": "Todos os dias", "n": 1 },
+            { "texto": "Nas folgas", "n": 1 }
+          ]
+        },
+        {
+          "pergunta": "Produtos mais comprados",
+          "respostas": [
+            { "texto": "Ração", "n": 5 },
+            { "texto": "Shampoo", "n": 2 },
+            { "texto": "Antipulgas", "n": 1 },
+            { "texto": "Sachê", "n": 1 }
+          ]
+        },
+        {
+          "pergunta": "Onde costuma comprar?",
+          "respostas": [
+            { "texto": "Pet shop ou casa de ração", "n": 3 },
+            { "texto": "Petlove (on-line)", "n": 2 },
+            { "texto": "Atacadista", "n": 1 }
+          ]
+        },
+        {
+          "pergunta": "O que mais pesa na escolha?",
+          "respostas": [
+            { "texto": "Qualidade", "n": 3 },
+            { "texto": "Avaliações", "n": 1 },
+            { "texto": "Atendimento", "n": 1 },
+            { "texto": "Brinquedos", "n": 1 }
+          ]
+        }
+      ]
+    },
+    "midia": [
+      {
+        "tipo": "imagem",
+        "src": "assets/img/saida-tecnica-parque-do-carmo.jpg",
+        "alt": "Cachorro deitado na grama recebendo carinho no Parque do Carmo"
       }
     ]
   }

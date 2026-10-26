@@ -12,6 +12,10 @@ O que está entre colchetes não aparece no site, só faz a pessoa entrar naquel
     Vitor - Gestor Geral [T.I].jpg
     Fulano - Marketing [RH, Planejamento].jpg
 
+Quem ainda não tem foto vai no arquivo sem-foto.txt da mesma pasta, uma pessoa por
+linha, no mesmo formato ("Ariane - Recursos Humanos"). No site aparece um círculo
+com a inicial no lugar da foto.
+
 Para escolher a ordem, coloque um número na frente: "01 - Gustavo - Gestor Geral.jpg".
 Sem números, a ordem é por área (instrutora, gestão, RH, marketing...), com
 Gestor(a) Geral primeiro e suplentes por último dentro de cada área.
@@ -52,6 +56,7 @@ OPTIONAL = "--opcional" in sys.argv[1:]
 SRC = Path(ARGS[0]) if ARGS else ROOT / "fotos-time"
 OUT_IMG = ROOT / "assets" / "img" / "time"
 OUT_JSON = ROOT / "data" / "time.json"
+NO_PHOTO = SRC / "sem-foto.txt"
 SIZE = 480
 EXTS = {".jpg", ".jpeg", ".png", ".webp", ".heic", ".heif"}
 
@@ -129,11 +134,18 @@ def main():
             return
         sys.exit(f"Nenhuma foto encontrada em {SRC}")
 
+    # Fotos e, depois, quem está em sem-foto.txt (arquivo = None)
+    entries = [(p.stem, p) for p in files]
+    if NO_PHOTO.is_file():
+        for line in NO_PHOTO.read_text(encoding="utf-8-sig").splitlines():
+            if line.strip() and not line.lstrip().startswith("#"):
+                entries.append((line.strip(), None))
+
     people = []
-    for path in files:
-        order, nome, cargo, apoio = parse_name(path.stem)
+    for stem, path in entries:
+        order, nome, cargo, apoio = parse_name(stem)
         if not cargo:
-            print(f"  aviso: '{path.name}' está sem cargo (use 'Nome - Cargo')")
+            print(f"  aviso: '{path.name if path else stem}' está sem cargo (use 'Nome - Cargo')")
         area, gestor = area_of(cargo)
         people.append({
             "ordem": order, "nome": nome, "cargo": cargo, "area": area, "gestao": gestor,
@@ -155,6 +167,13 @@ def main():
     OUT_IMG.mkdir(parents=True, exist_ok=True)
     used, data = set(), []
     for p in people:
+        item = {"nome": p["nome"], "cargo": p["cargo"], "area": p["area"], "gestao": p["gestao"]}
+        if p["apoio"]:
+            item["apoio"] = p["apoio"]
+        data.append(item)
+        if p["arquivo"] is None:
+            continue
+
         slug = base = slugify(p["nome"])
         n = 2
         while slug in used:
@@ -165,12 +184,7 @@ def main():
         side = min(im.size + (SIZE,))
         im = ImageOps.fit(im, (side, side), Image.LANCZOS, centering=(0.5, 0.35))
         im.save(OUT_IMG / f"{slug}.jpg", "JPEG", quality=82, optimize=True, progressive=True)
-
-        item = {"nome": p["nome"], "cargo": p["cargo"], "area": p["area"], "gestao": p["gestao"]}
-        if p["apoio"]:
-            item["apoio"] = p["apoio"]
         item["foto"] = f"assets/img/time/{slug}.jpg"
-        data.append(item)
 
     removed = [f for f in OUT_IMG.glob("*.jpg") if f.stem not in used]
     for f in removed:
@@ -183,7 +197,8 @@ def main():
     for d in data:
         filtros = ["Gestão"] if d["gestao"] else []
         filtros += [a for a in [d["area"], *d.get("apoio", [])] if a not in filtros]
-        print(f"  {d['nome']:<24} {d['cargo']:<40} [{' + '.join(filtros)}]")
+        sem_foto = "" if "foto" in d else "  (sem foto)"
+        print(f"  {d['nome']:<24} {d['cargo']:<40} [{' + '.join(filtros)}]{sem_foto}")
     if removed:
         print(f"\nFotos antigas removidas: {', '.join(f.name for f in removed)}")
     print(f"\nAtualizado: {OUT_JSON.relative_to(ROOT)}")

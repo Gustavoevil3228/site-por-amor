@@ -420,6 +420,37 @@ body:has(.project-dialog[open]) { overflow: hidden; }
 .pd-media img.media-contain { object-fit: contain; }
 .pd-media .project-video { max-height: 60vh; }
 .pd-body .highlights { margin: 4px 0 16px; }
+
+/* Resultado de pesquisa (projetos com "pesquisa") */
+.survey { margin: 8px 0 20px; }
+.survey h3 { color: var(--brand-deep); margin-bottom: 12px; }
+.survey-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+.survey-q {
+  margin: 0;
+  padding: 14px 16px 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.survey-q figcaption { font-family: var(--font-heading); font-weight: 800; color: var(--heading); margin-bottom: 8px; }
+.survey-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 46px;
+  grid-template-areas: "label value" "track track";
+  column-gap: 8px;
+  padding: 4px 6px 6px;
+  margin: 0 -6px;
+  border-radius: 8px;
+  cursor: default;
+}
+.survey-row:hover { background: var(--surface-alt); }
+.survey-label { grid-area: label; font-size: 0.9rem; color: var(--ink); }
+.survey-value { grid-area: value; font-size: 0.85rem; color: var(--ink-soft); text-align: right; font-variant-numeric: tabular-nums; }
+.survey-track { grid-area: track; display: block; height: 10px; margin-top: 3px; border-radius: 4px; background: var(--brand-soft); }
+.survey-bar { display: block; height: 100%; border-radius: 4px; background: var(--brand); }
+.survey-bar.is-top { background: var(--brand-strong); }
+.survey-row:hover .survey-bar { background: var(--brand-deep); }
+.survey-note { font-size: 0.85rem; color: var(--ink-soft); margin-top: 10px; }
 .pd-body .tl-sub { margin: 4px 0 16px; }
 .pd-body .gallery { margin: 8px 0 18px; }
 .pd-nav {
@@ -677,11 +708,19 @@ body:has(.project-dialog[open]) { overflow: hidden; }
   aspect-ratio: 1 / 1;
   display: grid;
   place-items: center;
+  background: var(--line);
+}
+.member-fallback .initial-circle { width: 58%; font-size: 4rem; }
+.initial-circle {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
   background: var(--brand);
   color: var(--brand-deep);
   font-family: var(--font-heading);
   font-weight: 800;
-  font-size: 3rem;
+  line-height: 1;
 }
 .member-info { padding: 14px 12px 18px; }
 .member-name { font-family: var(--font-heading); font-weight: 800; color: var(--heading); font-size: 1.1rem; }
@@ -917,6 +956,14 @@ body:has(.project-dialog[open]) { overflow: hidden; }
   transition: transform 0.15s;
 }
 .avatar:hover img { transform: scale(1.1); }
+.avatar .initial-circle {
+  width: 72px;
+  font-size: 1.8rem;
+  border: 3px solid #fff;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s;
+}
+.avatar:hover .initial-circle { transform: scale(1.1); }
 
 /* ---------- Diversão: quiz ---------- */
 

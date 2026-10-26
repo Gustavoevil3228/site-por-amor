@@ -1,0 +1,7 @@
+# Quem ainda não tem foto: uma pessoa por linha, no formato "Nome - Cargo".
+# No site aparece um círculo com a inicial. Quando a foto chegar, coloque a foto
+# nesta pasta e apague a linha da pessoa daqui.
+Ariane - Recursos Humanos
+Eduardo - Tecnologia da Informação
+Vinicius - Tecnologia da Informação
+Ruan P. - Tecnologia da Informação

@@ -28,6 +28,14 @@ function el(tag, className, text) {
   return node;
 }
 
+// Círculo com a inicial, para quem está sem foto (ou se a foto não carregar)
+function initialCircle(nome) {
+  const circle = el("span", "initial-circle", nome.trim().charAt(0).toUpperCase());
+  circle.setAttribute("role", "img");
+  circle.setAttribute("aria-label", `${nome} (sem foto)`);
+  return circle;
+}
+
 // Datas dos projetos e da linha do tempo: "2026-08" (só o mês) ou "2026-08-08" (dia)
 const MONTH_NAMES = ["janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"];
 
@@ -115,30 +123,29 @@ if (teamGrid) {
     teamGrid.innerHTML = "";
     list.forEach((m) => {
       const card = el("article", "member");
+      const fallback = () => {
+        const box = el("div", "member-fallback");
+        box.appendChild(initialCircle(m.nome));
+        return box;
+      };
 
-      const img = el("img");
-      img.src = m.foto;
-      img.alt = `Foto de ${m.nome}`;
-      img.loading = "lazy";
-      img.width = 480;
-      img.height = 480;
-      // Se a foto não carregar, mostra as iniciais no lugar do ícone quebrado
-      img.addEventListener("error", () => {
-        const initials = m.nome
-          .split(/\s+/)
-          .slice(0, 2)
-          .map((w) => w[0])
-          .join("")
-          .toUpperCase();
-        const fallback = el("div", "member-fallback", initials);
-        fallback.setAttribute("role", "img");
-        fallback.setAttribute("aria-label", `Sem foto de ${m.nome}`);
-        img.replaceWith(fallback);
-      });
+      let pic;
+      if (m.foto) {
+        pic = el("img");
+        pic.src = m.foto;
+        pic.alt = `Foto de ${m.nome}`;
+        pic.loading = "lazy";
+        pic.width = 480;
+        pic.height = 480;
+        // Se a foto não carregar, mostra a inicial no lugar do ícone quebrado
+        pic.addEventListener("error", () => pic.replaceWith(fallback()));
+      } else {
+        pic = fallback();
+      }
 
       const info = el("div", "member-info");
       info.append(el("div", "member-name", m.nome), el("div", "member-role", m.cargo));
-      card.append(img, info);
+      card.append(pic, info);
       teamGrid.appendChild(card);
     });
   }
@@ -260,6 +267,33 @@ if (projectGrid) {
     return box;
   }
 
+  // Resultado de pesquisa: uma barra por resposta, todas na mesma escala (o total de entrevistados)
+  function renderSurvey(s) {
+    const box = el("section", "survey");
+    box.appendChild(el("h3", null, s.titulo || "Resultado da pesquisa"));
+    const grid = el("div", "survey-grid");
+    s.perguntas.forEach((q) => {
+      const fig = el("figure", "survey-q");
+      fig.appendChild(el("figcaption", null, q.pergunta));
+      const max = Math.max(...q.respostas.map((r) => r.n));
+      q.respostas.forEach((r) => {
+        const pct = Math.round((r.n / s.total) * 100);
+        const row = el("div", "survey-row");
+        row.title = `${r.texto}: ${r.n} de ${s.total} (${pct}%)`;
+        const bar = el("span", r.n === max ? "survey-bar is-top" : "survey-bar");
+        bar.style.width = `${(r.n / s.total) * 100}%`;
+        const track = el("span", "survey-track");
+        track.appendChild(bar);
+        row.append(el("span", "survey-label", r.texto), track, el("span", "survey-value", `${r.n} de ${s.total}`));
+        fig.appendChild(row);
+      });
+      grid.appendChild(fig);
+    });
+    box.appendChild(grid);
+    if (s.nota) box.appendChild(el("p", "survey-note", s.nota));
+    return box;
+  }
+
   function openProject(id) {
     const p = projects.find((x) => x.id === id);
     if (!p) return;
@@ -288,6 +322,7 @@ if (projectGrid) {
     if (media.length) body.appendChild(el("div", "pd-media")).appendChild(renderMedia(media[0]));
     (p.paragrafos || []).forEach((t) => body.appendChild(el("p", null, t)));
     if (p.destaques && p.destaques.length) body.appendChild(renderHighlights(p.destaques));
+    if (p.pesquisa) body.appendChild(renderSurvey(p.pesquisa));
     if (p.atividades && p.atividades.length) {
       const list = el("ul", "tl-sub");
       p.atividades.forEach((a) => {
@@ -645,12 +680,18 @@ if (homeStats) {
       const a = el("a", "avatar");
       a.href = "time.html";
       a.title = `${m.nome} · ${m.cargo}`;
+      if (!m.foto) {
+        a.appendChild(initialCircle(m.nome));
+        wall.appendChild(a);
+        return;
+      }
       const img = el("img");
       img.src = m.foto;
       img.alt = m.nome;
       img.loading = "lazy";
       img.width = 72;
       img.height = 72;
+      img.addEventListener("error", () => img.replaceWith(initialCircle(m.nome)));
       a.appendChild(img);
       wall.appendChild(a);
     });

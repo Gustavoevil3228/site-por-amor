@@ -17,6 +17,10 @@ O que está entre colchetes não aparece no site, só coloca a pessoa naquele fi
     Luiza - Gestora Geral [Planejamento].jpg
     Fulano - Marketing [RH, Planejamento].jpg   (mais de um time: separe por vírgula)
 
+Quem ainda NÃO TEM FOTO vai no arquivo sem-foto.txt desta pasta, uma pessoa por
+linha, no mesmo formato (ex.: Ariane - Recursos Humanos). No site aparece um
+círculo com a inicial. Quando a foto chegar, coloque a foto aqui e apague a linha.
+
 Para escolher a ordem em que aparecem no site, coloque um número na frente:
     01 - Gustavo - Gestor Geral.jpg
 
